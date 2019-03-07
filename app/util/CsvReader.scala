@@ -6,12 +6,16 @@ import com.fasterxml.jackson.databind._
 import com.fasterxml.jackson.dataformat.csv.{CsvMapper, CsvParser, CsvSchema}
 import play.api.libs.json.JsValue
 
+import scala.io.BufferedSource
+
 
 object CsvReader {
 
   def csvFileToJson(filePath: String, hasHeader: Boolean): String = {
 
-    val inputStream = getClass().getResourceAsStream(filePath);
+    val what = scala.io.Source.fromResource(filePath).reader()
+
+    val inputStream: InputStream = getClass().getResourceAsStream(filePath)
 
     val inputCsvFile: File = new File(filePath)
 
@@ -22,7 +26,7 @@ object CsvReader {
     val readAll = csvMapper
       .readerFor(classOf[java.util.Map[String, String]])
       .`with`(csvSchema)
-      .readValues(inputStream)
+      .readValues(what)
       .readAll()
 
     val mapper = new ObjectMapper()
@@ -31,20 +35,19 @@ object CsvReader {
     mapper.writerWithDefaultPrettyPrinter().writeValueAsString(readAll)
   }
 
+  case class HeightWeight(Gender: String, Height:String, Weight:String, Index: String)
+
   def alsoCsvToJson(filePath: String, hasHeader: Boolean): String = {
-    val input = new File(filePath)
 
-    val csvSchema = CsvSchema.builder().setUseHeader(true).build();
-    val csvMapper = new CsvMapper();
+    val bufferedSource = scala.io.Source.fromResource(filePath)
+    for (line <- bufferedSource.getLines) {
+      val cols = line.split(",").map(_.trim)
+      // do whatever you want with the columns here
+      println(s"${cols(0)}|${cols(1)}|${cols(2)}|${cols(3)}")
+    }
+    bufferedSource.close
 
-    // Read data from CSV file
-    val readAll = csvMapper.readerFor(classOf[java.util.Map[String,String]]).`with`(csvSchema).readValues(input).readAll()
-
-    val mapper = new ObjectMapper();
-
-    val outputString = mapper.writerWithDefaultPrettyPrinter().writeValueAsString(readAll);
-
-    outputString
+    "stuff"
   }
 }
 
