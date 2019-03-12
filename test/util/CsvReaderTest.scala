@@ -1,11 +1,13 @@
 package util
+import org.specs2.mutable.Specification
 
-import org.scalatest.FunSuite
+class CsvReaderTest extends Specification {
 
-class CsvReaderTest extends FunSuite {
-
-  test("testCsvFileToJson") {
-
+  "csvFileToJson" should {
+    "read a csv file" in {
+      val whatami = CsvReader.csvFileToJson("/height-weight-test.csv", true)
+      whatami shouldEqual("abc")
+    }
   }
 
 }
