@@ -11,11 +11,8 @@ resolvers += Resolver.bintrayRepo("cibotech", "public")
 libraryDependencies += "com.cibo" %% "evilplot" % "0.6.3"
 libraryDependencies += "com.cibo" %% "evilplot-repl" % "0.6.3"
 
-libraryDependencies += "com.fasterxml.jackson.dataformat" % "jackson-dataformat-csv" % "2.2.3"
-
 libraryDependencies += guice
 libraryDependencies += "org.specs2" %% "specs2-core" % "4.4.1" % Test
-libraryDependencies += "com.fasterxml.jackson.dataformat" % "jackson-dataformat-csv" % "2.9.8"
 
 
 // Adds additional packages into Twirl
