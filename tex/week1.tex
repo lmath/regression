@@ -5,10 +5,13 @@
 
 \section{Week 1 - Linear Regression}
 \section{Introduction}
+%Tell me about why you're interested in Machine learning
+% What are some machine learning problems?
+
 //TODO add references to Coursera ML and Machine Learning for Humans book
 We come across  machine learning all the time 
 
-//TODO: add overall outline & what we are intending to cover
+//TODO: add overall outline and what we are intending to cover
 
 It's why I don't have to sift through these emails in my inbox
 
@@ -101,6 +104,37 @@ Here is another example of an unsupervised learning problem:
 Given fixed mics in a room, and conversations happening around them, the mics will collect audio data for all of the conversations mixed together. If you want to be able to follow one of the conversations, an algorithm that identifies the underlying structure to be able to extract just the parts of the audio that belong to one conversation is an unsupervised learning problem. 
 
 \subsection{Linear Regression}
+% do we want a different dataset ?
+Let's move on to working through our first machine learning problem.
+
+Suppose we want to predict a person's weight, given their height. This isn't something I actually want to do, but it's two variables that are clearly dependent on each other.
+
+Here is a sample from a dataset of heights and weights:
+\begin{table}[htp]
+\caption{Sample from a dataset of heights and weights}
+\begin{center}
+\begin{tabular}{|c|c|c|c|c|}
+\hline
+Gender & Age & Height (inches) & Weight (lbs) & How would you describe your weight? \\ \hline
+Female & 18 & 67 & 150 & Slightly overweight \\
+Male & 17 & 67 & 140 & About the right weight \\
+Female & 16 & 67 & 100 & Slightly underweight \\
+Female & 18 & 62 & 185 & Slightly overweight \\
+Male & 17 & 62 & 140 & Slightly overweight \\
+\hline
+\end{tabular}
+\end{center}
+\label{Sample from a dataset of heights and weights}
+\end{table}%
+
+%todo justify this
+Let's plot height vs weight for the whole dataset.
+
+\includegraphics[width={\textwidth}]{height-weight}
+
+It does seem reasonable to presume that height and weight have a linear relationship. 
+
+Let's begin setting up our model a little more formally. 
 
 
 \end{document}
