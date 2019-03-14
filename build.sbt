@@ -14,9 +14,3 @@ libraryDependencies += "com.cibo" %% "evilplot-repl" % "0.6.3"
 libraryDependencies += guice
 libraryDependencies += "org.specs2" %% "specs2-core" % "4.4.1" % Test
 
-
-// Adds additional packages into Twirl
-//TwirlKeys.templateImports += "com.gu.controllers._"
-
-// Adds additional packages into conf/routes
-// play.sbt.routes.RoutesKeys.routesImport += "com.gu.binders._"
