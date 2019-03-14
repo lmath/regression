@@ -1,6 +1,7 @@
 package app
 
 import com.cibo.evilplot._
+import com.cibo.evilplot.colors.HTMLNamedColors
 import com.cibo.evilplot.plot._
 import com.cibo.evilplot.plot.aesthetics.DefaultTheme._
 import com.cibo.evilplot.numeric.Point
@@ -41,6 +42,24 @@ object PlotStuffApp {
     .yLabel("weight")
     .render()
   displayPlot(labelledPlot)
+
+  import com.cibo.evilplot.colors.HTMLNamedColors._
+  import com.cibo.evilplot.numeric.Bounds
+  import com.cibo.evilplot.plot._
+
+  val functionPlot = Overlay(
+    FunctionPlot.series(x => 3.5 * x - 50, "y = 5x - 40",
+      HTMLNamedColors.green, xbounds = Some(Bounds(0, 100))),
+    ScatterPlot(
+      points
+    )
+  ).title("A bunch of polynomials.")
+    .overlayLegend()
+    .standard()
+    .render()
+
+  displayPlot(functionPlot)
+
 
   def main(args: Array[String]): Unit = {
     println("Hello, world!")
