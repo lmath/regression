@@ -61,3 +61,19 @@ Suppose we want to be able to predict someone's weight given their height.
 We start with a data set of height and weight pairs
 
 
+
+
+![image](https://user-images.githubusercontent.com/3072877/54230636-b88ad900-44fe-11e9-8c64-c930b0fae89c.png)
+![image](https://user-images.githubusercontent.com/3072877/54230780-0bfd2700-44ff-11e9-9672-5ff4436178fd.png)
+
+![image](https://user-images.githubusercontent.com/3072877/54241751-f21d0d80-4519-11e9-83d8-28a700f4fd44.png)
+
+![image](https://user-images.githubusercontent.com/3072877/54282945-f6d2d780-4594-11e9-969c-386f01ab5ddd.png)
+
+![image](https://user-images.githubusercontent.com/3072877/54283073-326da180-4595-11e9-936c-7391ab5de328.png)
+
+![image](https://user-images.githubusercontent.com/3072877/54283196-6a74e480-4595-11e9-95b1-44f143b08e46.png)
+
+![image](https://user-images.githubusercontent.com/3072877/54284529-09024500-4598-11e9-92b1-76276e4a0fc0.png)
+
+![image](https://user-images.githubusercontent.com/3072877/54304655-89876c80-45bd-11e9-930b-342184b01ca2.png)
