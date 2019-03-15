@@ -1,4 +1,5 @@
 package util
+import model.House
 import org.specs2.mutable.Specification
 
 class CsvReaderTest extends Specification {
@@ -22,6 +23,25 @@ class CsvReaderTest extends Specification {
 
       val heightsAndWeights = CsvReader.asCaseClassList("height-weight-test.csv", true, transformer)
       heightsAndWeights shouldEqual(expected)
+    }
+
+    "read a csv house prices file" in {
+      def transformer(strings: Array[String]) = House(strings(0), strings(4).toDouble, strings(80).toDouble)
+
+      val expected = List(
+        House("1",8450.0,208500.0),
+        House("2",9600.0,181500.0),
+        House("3",11250.0,223500.0),
+        House("4",9550.0,140000.0),
+        House("5",14260.0,250000.0),
+        House("6",14115.0,143000.0),
+        House("7",10084.0,307000.0),
+        House("8",10382.0,200000.0),
+        House("9",6120.0,129900.0)
+      )
+
+      val housePrices = CsvReader.asCaseClassList("house-prices-training-data-test.csv", true, transformer)
+      housePrices shouldEqual(expected)
     }
   }
 
