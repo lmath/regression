@@ -29,7 +29,7 @@ effectively perform a specific task without using explicit instructions, relying
 
 
 Machine learning algorithms can learn to do a particular task without being explicitly programmed by building a 
-mathematical model based on sample data, known as "training data". Then, that model can be applied to new data 
+mathematical model based on sample resources.data, known as "training resources.data". Then, that model can be applied to new resources.data
 not previously used to build the model. 
 
 \subsection{What is an algorithm?}
@@ -48,7 +48,7 @@ classification (spam/not spam). The algorithm could be a set of steps. We could 
 the message that are based on previous messages that we know have turned out to be spam. 
 
 We could also train a model based on a dataset of emails and classifications, to learn patterns of what spam messages 
-look like without explicitly writing spam identification rules. Then, we could use the model for new data without a 
+look like without explicitly writing spam identification rules. Then, we could use the model for new resources.data without a
 classification. That's the approach we're more interested in here, but both approaches are algorithms.
 
 \subsection{What is a machine learning algorithm?}
@@ -59,7 +59,7 @@ A computer program is said to learn from experience $E$ with respect to some tas
 if its performance on $T$, as measured by $P$ improves with experience $E$
 
 So, we can see that the rule based spam filtering approach wouldn't be a machine learning based approach because having 
-more labelled data would not help us to classify spam any more accurately. 
+more labelled resources.data would not help us to classify spam any more accurately.
 
 \subsection{Supervised Learning}
 
@@ -69,11 +69,11 @@ Suppose we have a dataset of houses that have sold containing how much they have
 
 \includegraphics[width={\textwidth}]{housing-prices}
 
-Then, we can use this data to build a model so that we can make a prediction like:
+Then, we can use this resources.data to build a model so that we can make a prediction like:
 
 For this new 750 $ft^2$ property, how much will it sell for?
 
-This is a \textit{Supervised Learning} problem because existing labelled data (with the right answers) to work with and to test how accurate our model is. 
+This is a \textit{Supervised Learning} problem because existing labelled resources.data (with the right answers) to work with and to test how accurate our model is.
 
 This is also a \textit{Linear Regression} problem because the prediction is a continuous valued output. 
 
@@ -85,11 +85,11 @@ Suppose we want to predict whether a tumour is benign or malignant, and we have 
 
 This would be a \textit{classification} problem, because the prediction is a discrete valued output (in this case, either benign or malignant). 
 
-These might seem like toy examples so far. Cancer researchers will collect all sorts of data about tumours and patients that could all be useful in our model. But, we will aim to introduce concepts with a simplified view of the data to help our understanding, then move on to being able to use more features/data and more complicated techniques.
+These might seem like toy examples so far. Cancer researchers will collect all sorts of resources.data about tumours and patients that could all be useful in our model. But, we will aim to introduce concepts with a simplified view of the resources.data to help our understanding, then move on to being able to use more features/resources.data and more complicated techniques.
 
 \subsection{Unsupervised Learning}
 
-There is another area of Machine Learning, unsupervised learning that doesn't use labelled data to build a model. We won't cover unsupervised learning here, but let's introduce a couple unsupervised learning problems so that we'll get a feel for what these problems are like, and why they are different from supervised learning.
+There is another area of Machine Learning, unsupervised learning that doesn't use labelled resources.data to build a model. We won't cover unsupervised learning here, but let's introduce a couple unsupervised learning problems so that we'll get a feel for what these problems are like, and why they are different from supervised learning.
 
 Here is an example of an unsupervised learning problem:
 
@@ -101,7 +101,7 @@ Here is another example of an unsupervised learning problem:
 
 \includegraphics[width={\textwidth}]{cocktail-party}
 
-Given fixed mics in a room, and conversations happening around them, the mics will collect audio data for all of the conversations mixed together. If you want to be able to follow one of the conversations, an algorithm that identifies the underlying structure to be able to extract just the parts of the audio that belong to one conversation is an unsupervised learning problem. 
+Given fixed mics in a room, and conversations happening around them, the mics will collect audio resources.data for all of the conversations mixed together. If you want to be able to follow one of the conversations, an algorithm that identifies the underlying structure to be able to extract just the parts of the audio that belong to one conversation is an unsupervised learning problem.
 
 \subsection{Linear Regression}
 % do we want a different dataset ?

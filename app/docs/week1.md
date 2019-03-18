@@ -20,7 +20,7 @@ effectively perform a specific task without using explicit instructions, relying
 
 
 Machine learning algorithms can learn to do a particular task without being explicitly programmed by building a 
-mathematical model based on sample data, known as "training data". Then, that model can be applied to new data 
+mathematical model based on sample resources.data, known as "training resources.data". Then, that model can be applied to new resources.data 
 not previously used to build the model. 
 
 
@@ -41,7 +41,7 @@ classification (spam/not spam). The algorithm could be a set of steps. We could 
 the message that are based on previous messages that we know have turned out to be spam. 
 
 We could also train a model based on a dataset of emails and classifications, to learn patterns of what spam messages 
-look like without explicitly writing spam identification rules. Then, we could use the model for new data without a 
+look like without explicitly writing spam identification rules. Then, we could use the model for new resources.data without a 
 classification. That's the approach we're more interested in here, but both approaches are algorithms.
 
 ##### What is a Machine Learning algorithm?
@@ -52,13 +52,13 @@ A computer program is said to learn from experience *E* with respect to some tas
 if its performance on *T*, as measured by *P* improves with experience *E*
 
 So, we can see that the rule based spam filtering approach wouldn't be a machine learning based approach because having 
-more labelled data would not help us to classify spam any more accurately. 
+more labelled resources.data would not help us to classify spam any more accurately. 
 
 ##### Our first linear regression problem
 
 Suppose we want to be able to predict someone's weight given their height. 
 
-We start with a data set of height and weight pairs
+We start with a resources.data set of height and weight pairs
 
 
 

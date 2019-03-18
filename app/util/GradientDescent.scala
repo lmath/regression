@@ -30,9 +30,11 @@ object GradientDescent {
     learningRate: Double,
     iters: Int): LearnedParameterSet = {
 
+//    val scaledData = FeatureScaler.scaledFeatures(resources.data)
+    val scaledData = FeatureScaler.scaledDividedByMax(data)
     var theta0 = startingTheta0
     var theta1 = startingTheta1
-    var cost = LinearErrorCalculator.linearMSE(data, theta0, theta1)
+    var cost = LinearErrorCalculator.linearMSE(scaledData, theta0, theta1)
     println(s"starting cost ${cost}")
 
     var counter = iters
@@ -41,16 +43,16 @@ object GradientDescent {
       println(s"old theta 0 ${theta0}")
       println(s"old theta 1 ${theta1}")
 
-      println(s"theta 0 iter ${theta0Iter(data, theta0, theta1, learningRate)}")
-      println(s"theta 1 iter ${theta1Iter(data, theta0, theta1, learningRate)}")
+      println(s"theta 0 iter ${theta0Iter(scaledData, theta0, theta1, learningRate)}")
+      println(s"theta 1 iter ${theta1Iter(scaledData, theta0, theta1, learningRate)}")
 
-      val tempTheta0 = theta0Iter(data, theta0, theta1, learningRate)
-      val tempTheta1 = theta1Iter(data, theta0, theta1, learningRate)
+      val tempTheta0 = theta0Iter(scaledData, theta0, theta1, learningRate)
+      val tempTheta1 = theta1Iter(scaledData, theta0, theta1, learningRate)
 
       theta0 = tempTheta0
       theta1 = tempTheta1
 
-      cost = LinearErrorCalculator.linearMSE(data, theta0, theta1)
+      cost = LinearErrorCalculator.linearMSE(scaledData, theta0, theta1)
       println(s"new theta 0 ${theta0}")
       println(s"new theta 1 ${theta1}")
       println(s"new cost ${cost}")
