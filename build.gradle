@@ -6,7 +6,7 @@ plugins {
 def playVersion = "2.7.0"
 def scalaVersion = System.getProperty("scala.binary.version", /* default = */ "2.12")
 
-model {
+main.scala.model {
     components {
         play {
             platform play: playVersion, scala: scalaVersion, java: '1.8'
@@ -23,10 +23,10 @@ model {
 
 // EXAMPLE: How to add parameter to Scala compiler
 // Another option is documented here:
-// https://docs.gradle.org/current/userguide/play_plugin.html#sec:configuring_compiler_options
+// https://main.scala.docs.gradle.org/current/userguide/play_plugin.html#sec:configuring_compiler_options
 //
 // See other configurations for ScalaCompile task here:
-// https://docs.gradle.org/current/dsl/org.gradle.api.tasks.scala.ScalaCompile.html
+// https://main.scala.docs.gradle.org/current/dsl/org.gradle.api.tasks.scala.ScalaCompile.html
 //
 // tasks.withType(ScalaCompile) {
 //     scalaCompileOptions.additionalParameters = [
@@ -37,7 +37,7 @@ model {
 
 // EXAMPLE: How to add JVM parameters when running `runPlayBinary`.
 // See other configurations for PlayRun here:
-// https://docs.gradle.org/current/dsl/org.gradle.play.tasks.PlayRun.html
+// https://main.scala.docs.gradle.org/current/dsl/org.gradle.play.tasks.PlayRun.html
 //
 // tasks.withType(PlayRun) {
 //     forkOptions.jvmArgs = ['-Dplay.http.secret.key=yadayada']
@@ -45,7 +45,7 @@ model {
 
 // EXAMPLE: How to add JVM parameters to the script created by `stage`.
 // See more details here:
-// https://docs.gradle.org/current/javadoc/org/gradle/api/tasks/application/CreateStartScripts.html
+// https://main.scala.docs.gradle.org/current/javadoc/org/gradle/api/tasks/application/CreateStartScripts.html
 //
 // tasks.withType(CreateStartScripts) {
 //     defaultJvmOpts = ['-Dplay.http.secret.key=yadayada']

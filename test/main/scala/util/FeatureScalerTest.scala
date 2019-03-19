@@ -1,6 +1,6 @@
-package util
+package main.scala.util
 
-import model.SimplePoint
+import main.scala.model.SimplePoint
 import org.specs2.mutable.Specification
 
 class FeatureScalerTest extends Specification {

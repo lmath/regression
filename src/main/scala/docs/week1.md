@@ -20,8 +20,8 @@ effectively perform a specific task without using explicit instructions, relying
 
 
 Machine learning algorithms can learn to do a particular task without being explicitly programmed by building a 
-mathematical model based on sample resources.data, known as "training resources.data". Then, that model can be applied to new resources.data 
-not previously used to build the model. 
+mathematical main.scala.model based on sample resources.data, known as "training resources.data". Then, that main.scala.model can be applied to new resources.data 
+not previously used to build the main.scala.model. 
 
 
 ##### What is an algorithm?
@@ -40,8 +40,8 @@ For example, for the problem of spam filtering the input would be an email messa
 classification (spam/not spam). The algorithm could be a set of steps. We could compose a series of regular expressions to 
 the message that are based on previous messages that we know have turned out to be spam. 
 
-We could also train a model based on a dataset of emails and classifications, to learn patterns of what spam messages 
-look like without explicitly writing spam identification rules. Then, we could use the model for new resources.data without a 
+We could also train a main.scala.model based on a dataset of emails and classifications, to learn patterns of what spam messages 
+look like without explicitly writing spam identification rules. Then, we could use the main.scala.model for new resources.data without a 
 classification. That's the approach we're more interested in here, but both approaches are algorithms.
 
 ##### What is a Machine Learning algorithm?

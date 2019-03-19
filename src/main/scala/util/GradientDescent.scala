@@ -1,6 +1,12 @@
-package util
+package main.scala.util
 
-import model.SimplePoint
+import com.cibo.evilplot.displayPlot
+import main.scala.model.{GradientDescentHistoryPoint, SimplePoint}
+
+import scala.collection.mutable.ListBuffer
+
+import com.cibo.evilplot.plot.aesthetics.DefaultTheme._
+
 
 object GradientDescent {
   def diffPoint(point: SimplePoint, theta0: Double, theta1: Double) = (theta1 * point.x + theta0) - point.y
@@ -21,7 +27,7 @@ object GradientDescent {
     theta1 - (adjustment * learningRate)
   }
 
-  case class LearnedParameterSet(theta0: Double, theta1: Double)
+  case class LearnedParameterSet(theta0: Double, theta1: Double, history: List[GradientDescentHistoryPoint])
 
   def gradientDescent(
     data: List[SimplePoint],
@@ -35,10 +41,11 @@ object GradientDescent {
     var theta0 = startingTheta0
     var theta1 = startingTheta1
     var cost = LinearErrorCalculator.linearMSE(scaledData, theta0, theta1)
+    var gradientDescentHistory = new ListBuffer[GradientDescentHistoryPoint]
     println(s"starting cost ${cost}")
 
-    var counter = iters
-    while(counter > 0 && cost > 0.001) {
+    var counter = 0
+    while(counter < iters && cost > 0.001) {
 
       println(s"old theta 0 ${theta0}")
       println(s"old theta 1 ${theta1}")
@@ -58,10 +65,11 @@ object GradientDescent {
       println(s"new cost ${cost}")
       println(s"we are on iter ${counter}")
 
-      counter = counter - 1
+      gradientDescentHistory += GradientDescentHistoryPoint(counter, cost)
+
+      counter = counter + 1
     }
 
-    LearnedParameterSet(theta0, theta1)
-
+    LearnedParameterSet(theta0, theta1, gradientDescentHistory.toList)
   }
 }

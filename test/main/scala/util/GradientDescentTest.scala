@@ -1,8 +1,8 @@
-package util
+package main.scala.util
 
-import model.{House, SimplePoint}
+import main.scala.model.{House, SimplePoint}
 import org.specs2.mutable.Specification
-import util.GradientDescent.LearnedParameterSet
+import main.scala.util.GradientDescent.LearnedParameterSet
 
 class GradientDescentTest extends Specification{
 
@@ -56,7 +56,7 @@ class GradientDescentTest extends Specification{
       val data = heightWeights.map(dataPoint => SimplePoint(dataPoint.height, dataPoint.weight))
       val gmm = GradientDescent.gradientDescent(data, 0, 1, 0.001, 1000)
 
-      gmm shouldEqual (LearnedParameterSet(5, 5))
+      gmm shouldEqual (LearnedParameterSet(5, 5, Nil))
     }
 
 //    "pass the coursera test case" in {

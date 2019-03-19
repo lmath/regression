@@ -1,4 +1,4 @@
-package app
+package main.scala.app
 
 import com.cibo.evilplot._
 import com.cibo.evilplot.colors.HTMLNamedColors
@@ -6,9 +6,8 @@ import com.cibo.evilplot.plot._
 import com.cibo.evilplot.plot.aesthetics.DefaultTheme._
 import com.cibo.evilplot.numeric.Point
 import com.cibo.evilplot.plot.renderers.PointRenderer
-import model.House
-import util.CsvReader
-
+import main.scala.model.House
+import main.scala.util.{CsvReader, Plotter}
 import com.cibo.evilplot.colors.HTMLNamedColors._
 import com.cibo.evilplot.numeric.Bounds
 import com.cibo.evilplot.plot._
@@ -17,7 +16,7 @@ import com.cibo.evilplot.plot._
 object PlotStuffApp {
 
     def transformer(strings: Array[String]) = House(strings(0), strings(4).toDouble, strings(80).toDouble)
-    val housePrices = CsvReader.asCaseClassList("house-prices-training-data.csv", true, transformer)
+    val housePrices = CsvReader.asCaseClassList("main/resources/house-prices-training-data.csv", true, transformer)
     val points = housePrices.map(d => Point(d.salePrice, d.lotArea))
 
     val labelledPlot = ScatterPlot(
@@ -29,7 +28,7 @@ object PlotStuffApp {
       .xLabel("sale price")
       .yLabel("lot area")
       .render()
-    displayPlot(labelledPlot)
+//    displayPlot(labelledPlot)
 
   val functionPlot = Overlay(
     FunctionPlot.series(x => 0.05 * x + 1, "y = 20x + 1",
@@ -42,11 +41,11 @@ object PlotStuffApp {
     .standard()
     .render()
 
-  displayPlot(functionPlot)
-
+//  displayPlot(functionPlot)
 
 
   def main(args: Array[String]): Unit = {
+
     println("Hello, world!")
   }
 }

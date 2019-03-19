@@ -1,5 +1,5 @@
-package util
-import model.House
+package main.scala.util
+import main.scala.model.House
 import org.specs2.mutable.Specification
 
 class CsvReaderTest extends Specification {

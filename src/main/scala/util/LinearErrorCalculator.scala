@@ -1,6 +1,6 @@
-package util
+package main.scala.util
 
-import model.SimplePoint
+import main.scala.model.SimplePoint
 
 object LinearErrorCalculator {
 

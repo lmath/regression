@@ -1,4 +1,4 @@
-package app
+package main.scala.app
 
 object ErrorCalculatorApp {
 
