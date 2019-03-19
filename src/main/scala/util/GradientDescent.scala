@@ -11,7 +11,7 @@ import com.cibo.evilplot.plot.aesthetics.DefaultTheme._
 object GradientDescent {
   def diffPoint(point: SimplePoint, theta0: Double, theta1: Double) = (theta1 * point.x + theta0) - point.y
 
-  def theta0Iter(data: List[SimplePoint], theta0: Double, theta1: Double, learningRate: Double): Double = {
+  def theta0Updated(data: List[SimplePoint], theta0: Double, theta1: Double, learningRate: Double): Double = {
     def stepPoint(point: SimplePoint) = diffPoint(point, theta0, theta1)
     val numberOfDataPointsDivisor: Double = 1/data.length.toDouble
     val adjustment = data.foldLeft(0.0)((sum, point) => sum + stepPoint(point)) * numberOfDataPointsDivisor
@@ -19,7 +19,7 @@ object GradientDescent {
     theta0 - (adjustment * learningRate)
   }
 
-  def theta1Iter(data: List[SimplePoint], theta0: Double, theta1: Double, learningRate: Double): Double = {
+  def theta1Updated(data: List[SimplePoint], theta0: Double, theta1: Double, learningRate: Double): Double = {
     def stepPoint(point: SimplePoint) = diffPoint(point, theta0, theta1) * point.x
     val numberOfDataPointsDivisor: Double = 1/data.length.toDouble
     val adjustment = data.foldLeft(0.0)((sum, point) => sum + stepPoint(point)) * numberOfDataPointsDivisor
@@ -36,8 +36,9 @@ object GradientDescent {
     learningRate: Double,
     iters: Int): LearnedParameterSet = {
 
-//    val scaledData = FeatureScaler.scaledFeatures(resources.data)
-    val scaledData = FeatureScaler.scaledDividedByMax(data)
+    val scaledData = FeatureScaler.scaledFeatures(data)
+//    val scaledData = FeatureScaler.scaledDividedByMax(data)
+
     var theta0 = startingTheta0
     var theta1 = startingTheta1
     var cost = LinearErrorCalculator.linearMSE(scaledData, theta0, theta1)
@@ -50,11 +51,11 @@ object GradientDescent {
       println(s"old theta 0 ${theta0}")
       println(s"old theta 1 ${theta1}")
 
-      println(s"theta 0 iter ${theta0Iter(scaledData, theta0, theta1, learningRate)}")
-      println(s"theta 1 iter ${theta1Iter(scaledData, theta0, theta1, learningRate)}")
+      println(s"theta 0 iter ${theta0Updated(scaledData, theta0, theta1, learningRate)}")
+      println(s"theta 1 iter ${theta1Updated(scaledData, theta0, theta1, learningRate)}")
 
-      val tempTheta0 = theta0Iter(scaledData, theta0, theta1, learningRate)
-      val tempTheta1 = theta1Iter(scaledData, theta0, theta1, learningRate)
+      val tempTheta0 = theta0Updated(scaledData, theta0, theta1, learningRate)
+      val tempTheta1 = theta1Updated(scaledData, theta0, theta1, learningRate)
 
       theta0 = tempTheta0
       theta1 = tempTheta1

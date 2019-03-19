@@ -1,6 +1,6 @@
 package main.scala.util
 
-import java.io.{File, FileReader, InputStream}
+import java.io._
 
 import scala.io.Source
 
@@ -53,4 +53,17 @@ object CsvReader {
   }
 }
 
+object CSVWriter {
+
+  def writeCaseClassListToCsv[T](csvFile: String, transformer: T => Array[String], data: List[T]) = {
+    val writer = new BufferedWriter(new FileWriter(csvFile))
+
+    val rows: Seq[String] = data.map { row =>
+      s"${transformer(row).mkString(",")}\n"
+    }
+    rows.foreach(writer.write)
+    writer.close()
+  }
+
+}
 

@@ -15,7 +15,7 @@ class GradientDescentTest extends Specification{
       )
 
       val data = expected.map(dataPoint => SimplePoint(dataPoint.height, dataPoint.weight))
-      val gmm: Double = GradientDescent.theta0Iter(data, 1, 1, 1)
+      val gmm: Double = GradientDescent.theta0Updated(data, 1, 1, 1)
 
       gmm shouldEqual (-90)
     }
@@ -30,7 +30,7 @@ class GradientDescentTest extends Specification{
       )
 
       val data = expected.map(dataPoint => SimplePoint(dataPoint.height, dataPoint.weight))
-      val gmm: Double = GradientDescent.theta1Iter(data, 1, 1, 1)
+      val gmm: Double = GradientDescent.theta1Updated(data, 1, 1, 1)
 
       gmm shouldEqual (-15999)
     }
@@ -54,9 +54,11 @@ class GradientDescentTest extends Specification{
       val heightWeights = CsvReader.asCaseClassListFromTestResource("height-weight-test.csv", true, transformer)
 
       val data = heightWeights.map(dataPoint => SimplePoint(dataPoint.height, dataPoint.weight))
-      val gmm = GradientDescent.gradientDescent(data, 0, 1, 0.001, 1000)
+      val learnedParams = GradientDescent.gradientDescent(data, 0, 1, 0.001, 1000)
 
-      gmm shouldEqual (LearnedParameterSet(5, 5, Nil))
+      learnedParams.theta0 shouldEqual (-0.009308274850941753)
+      learnedParams.theta1 shouldEqual (0.9889333098394358)
+
     }
 
 //    "pass the coursera test case" in {

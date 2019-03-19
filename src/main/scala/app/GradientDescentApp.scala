@@ -14,12 +14,12 @@ object GradientDescentApp {
   val heightWeights = CsvReader.asCaseClassList("/nlys-1999.csv", true, transformer)
 
   val data = heightWeights.map(dataPoint => SimplePoint(dataPoint.height, dataPoint.weight))
-  val gmm: LearnedParameterSet = GradientDescent.gradientDescent(data, 0, 1, 0.001, 1000)
+  val learnedParameters: LearnedParameterSet = GradientDescent.gradientDescent(data, 0, 1, 0.001, 1000)
   def main(args: Array[String]): Unit = {
 
     val heightWeightScaled = FeatureScaler.scaledDividedByMax(data)
-    displayPlot(Plotter.costItersPlot(gmm.history))
-    displayPlot(Plotter.heightWeightPlot(heightWeightScaled.map(p => HeightWeight("", p.x, p.y)), gmm.theta0, gmm.theta1))
+    displayPlot(Plotter.costItersPlot(learnedParameters.history))
+    displayPlot(Plotter.heightWeightPlot(heightWeightScaled.map(p => HeightWeight("", p.x, p.y)), learnedParameters.theta0, learnedParameters.theta1))
 
     println("Hello, world!")
   }
