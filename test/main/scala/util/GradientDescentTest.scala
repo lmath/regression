@@ -1,6 +1,6 @@
 package main.scala.util
 
-import main.scala.model.{House, SimplePoint}
+import main.scala.model.{HeightWeight, House, SimplePoint}
 import org.specs2.mutable.Specification
 import main.scala.util.GradientDescent.LearnedParameterSet
 
@@ -51,7 +51,7 @@ class GradientDescentTest extends Specification{
     "get closer to the right answer" in {
 
       def transformer(strings: Array[String]) = HeightWeight(strings(0), strings(1).toDouble, strings(2).toDouble)
-      val heightWeights = CsvReader.asCaseClassList("height-weight-test.csv", true, transformer)
+      val heightWeights = CsvReader.asCaseClassListFromTestResource("height-weight-test.csv", true, transformer)
 
       val data = heightWeights.map(dataPoint => SimplePoint(dataPoint.height, dataPoint.weight))
       val gmm = GradientDescent.gradientDescent(data, 0, 1, 0.001, 1000)

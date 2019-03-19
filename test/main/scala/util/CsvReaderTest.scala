@@ -1,5 +1,5 @@
 package main.scala.util
-import main.scala.model.House
+import main.scala.model.{HeightWeight, House}
 import org.specs2.mutable.Specification
 
 class CsvReaderTest extends Specification {
@@ -21,7 +21,7 @@ class CsvReaderTest extends Specification {
         HeightWeight("Female",169.0,103.0)
       )
 
-      val heightsAndWeights = CsvReader.asCaseClassList("height-weight-test.csv", true, transformer)
+      val heightsAndWeights = CsvReader.asCaseClassListFromTestResource("height-weight-test.csv", true, transformer)
       heightsAndWeights shouldEqual(expected)
     }
 
@@ -40,12 +40,9 @@ class CsvReaderTest extends Specification {
         House("9",6120.0,129900.0)
       )
 
-      val housePrices = CsvReader.asCaseClassList("house-prices-training-data-test.csv", true, transformer)
+      val housePrices = CsvReader.asCaseClassListFromTestResource("house-prices-training-data-test.csv", true, transformer)
       housePrices.take(9) shouldEqual(expected)
     }
   }
 
 }
-
-
-case class HeightWeight(gender: String, height: Double, weight: Double)

@@ -1,6 +1,6 @@
 package main.scala.util
 
-import main.scala.model.SimplePoint
+import main.scala.model.{HeightWeight, SimplePoint}
 import org.specs2.mutable.Specification
 
 class LinearErrorCalculatorTest extends Specification {
