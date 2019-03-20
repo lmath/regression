@@ -9,39 +9,26 @@ import main.scala.model.{GradientDescentHistoryPoint, HeightWeight, SimplePoint}
 
 object Plotter {
 
-
-  def scatterPlot(data: List[SimplePoint], xLabel: String, yLabel: String) = {
-    val points = data.map(d => Point(d.x, d.y))
-
-    ScatterPlot(
-      points
-    )
-      .xAxis()
-      .yAxis()
-      .frame()
-      .xLabel(xLabel)
-      .yLabel(yLabel)
-      .render()
-  }
-
-  def costItersPlot(data: List[GradientDescentHistoryPoint]) = {
+  def costItersPlot(data: List[GradientDescentHistoryPoint], title: Option[String]) = {
     val points = data.map(d => Point(d.iteration, d.cost))
 
+    val titleOrDefault = title.getOrElse("Cost vs Iterations plot")
     ScatterPlot(
       points
-    )
+    ).title(titleOrDefault)
       .xAxis()
       .yAxis()
       .frame()
       .xLabel("iteration number")
       .yLabel("cost")
       .render()
-
   }
 
-  def heightWeightPlot(data: List[HeightWeight], theta0: Double, theta1: Double): Drawable = {
+  def heightWeightPlot(data: List[HeightWeight], theta0: Double, theta1: Double, title: Option[String]): Drawable = {
 
     val points = data.map(d => Point(d.height, d.weight))
+
+    val titleOrDefault = title.getOrElse("Height vs weight data and line fit via linear regression")
 
     Overlay(
       FunctionPlot.series(function = x => theta1 * x + theta0, name = s"y = $theta1 + $theta0",
@@ -51,7 +38,7 @@ object Plotter {
       ScatterPlot(
         points,
       )
-    ).title("Height vs weight data and line fit via linear regression")
+    ).title(titleOrDefault)
       .overlayLegend()
       .standard()
       .render()

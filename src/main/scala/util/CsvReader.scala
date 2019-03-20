@@ -6,7 +6,6 @@ import scala.io.Source
 
 object CsvReader {
 
-
   def testResourceFile(fileName: String): File = {
     val classLoader = getClass().getClassLoader()
     new File(classLoader.getResource(fileName).getFile())
