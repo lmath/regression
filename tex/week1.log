@@ -1,4 +1,4 @@
-This is pdfTeX, Version 3.14159265-2.6-1.40.19 (TeX Live 2018) (preloaded format=pdflatex 2019.3.12)  13 MAR 2019 18:33
+This is pdfTeX, Version 3.14159265-2.6-1.40.19 (TeX Live 2018) (preloaded format=pdflatex 2019.3.20)  20 MAR 2019 18:56
 entering extended mode
  restricted \write18 enabled.
  file:line:error style messages enabled.
@@ -223,7 +223,7 @@ Overfull \hbox (17.62482pt too wide) in paragraph at lines 102--103
  []
 
 [5 <./images/google-news.png>]
-Overfull \hbox (63.22787pt too wide) in paragraph at lines 116--126
+Overfull \hbox (13.93936pt too wide) in paragraph at lines 116--126
  [] 
  []
 
@@ -237,25 +237,87 @@ Overfull \hbox (17.62482pt too wide) in paragraph at lines 133--134
 [][] 
  []
 
-[6 <./images/cocktail-party.png>] [7 <./images/height-weight.png>] (./week1.aux
-) ) 
+[6 <./images/cocktail-party.png>] [7 <./images/height-weight.png>]
+<./images/the-model.png, id=47, 954.56625pt x 412.54124pt>
+File: ./images/the-model.png Graphic file (type png)
+<use ./images/the-model.png>
+Package pdftex.def Info: ./images/the-model.png  used on input line 190.
+(pdftex.def)             Requested size: 390.0pt x 168.54498pt.
+
+Overfull \hbox (17.62482pt too wide) in paragraph at lines 190--191
+[][] 
+ []
+
+[8]
+<./images/regression-model.png, id=52, 510.90875pt x 583.17876pt>
+File: ./images/regression-model.png Graphic file (type png)
+<use ./images/regression-model.png>
+Package pdftex.def Info: ./images/regression-model.png  used on input line 192.
+
+(pdftex.def)             Requested size: 390.0pt x 445.16035pt.
+
+Overfull \hbox (17.62482pt too wide) in paragraph at lines 192--193
+[][] 
+ []
+
+[9 <./images/the-model.png>] [10 <./images/regression-model.png>]
+LaTeX Font Info:    Try loading font information for OMS+cmr on input line 222.
+
+
+(/usr/local/texlive/2018/texmf-dist/tex/latex/base/omscmr.fd
+File: omscmr.fd 2014/09/29 v2.5h Standard LaTeX font definitions
+)
+LaTeX Font Info:    Font shape `OMS/cmr/m/n' in size <12> not available
+(Font)              Font shape `OMS/cmsy/m/n' tried instead on input line 222.
+ [11]
+<./images/cost-iterations.png, id=66, 765.86125pt x 583.17876pt>
+File: ./images/cost-iterations.png Graphic file (type png)
+<use ./images/cost-iterations.png>
+Package pdftex.def Info: ./images/cost-iterations.png  used on input line 256.
+(pdftex.def)             Requested size: 390.0pt x 296.9723pt.
+
+Overfull \hbox (17.62482pt too wide) in paragraph at lines 256--257
+[][] 
+ []
+
+[12]
+<./images/not-working.png, id=71, 467.7475pt x 241.90375pt>
+File: ./images/not-working.png Graphic file (type png)
+<use ./images/not-working.png>
+Package pdftex.def Info: ./images/not-working.png  used on input line 262.
+(pdftex.def)             Requested size: 390.0pt x 201.70653pt.
+
+Overfull \hbox (17.62482pt too wide) in paragraph at lines 262--263
+[][] 
+ []
+
+[13 <./images/cost-iterations.png>] [14 <./images/not-working.png>]
+(./week1.aux)
+
+LaTeX Warning: Label(s) may have changed. Rerun to get cross-references right.
+
+ ) 
 Here is how much of TeX's memory you used:
- 1476 strings out of 492649
- 21850 string characters out of 6129622
- 84289 words of memory out of 5000000
- 5359 multiletter control sequences out of 15000+600000
- 7934 words of font info for 28 fonts, out of 8000000 for 9000
+ 1518 strings out of 492649
+ 22810 string characters out of 6129622
+ 85281 words of memory out of 5000000
+ 5394 multiletter control sequences out of 15000+600000
+ 8241 words of font info for 29 fonts, out of 8000000 for 9000
  1141 hyphenation exceptions out of 8191
- 41i,8n,25p,405b,241s stack positions out of 5000i,500n,10000p,200000b,80000s
-</usr/local/texlive/2018/texmf-dist/fonts/type1/public/amsfonts/cm/cmbx12.pf
-b></usr/local/texlive/2018/texmf-dist/fonts/type1/public/amsfonts/cm/cmmi12.pfb
-></usr/local/texlive/2018/texmf-dist/fonts/type1/public/amsfonts/cm/cmr12.pfb><
-/usr/local/texlive/2018/texmf-dist/fonts/type1/public/amsfonts/cm/cmr8.pfb></us
-r/local/texlive/2018/texmf-dist/fonts/type1/public/amsfonts/cm/cmti12.pfb>
-Output written on week1.pdf (7 pages, 1386618 bytes).
+ 41i,9n,25p,494b,241s stack positions out of 5000i,500n,10000p,200000b,80000s
+</usr/local/texlive/2018/texmf-dist/fonts/type1/public/amsfonts/cm/cmbx12.pfb
+></usr/local/texlive/2018/texmf-dist/fonts/type1/public/amsfonts/cm/cmex10.pfb>
+</usr/local/texlive/2018/texmf-dist/fonts/type1/public/amsfonts/cm/cmmi12.pfb><
+/usr/local/texlive/2018/texmf-dist/fonts/type1/public/amsfonts/cm/cmmi8.pfb></u
+sr/local/texlive/2018/texmf-dist/fonts/type1/public/amsfonts/cm/cmr12.pfb></usr
+/local/texlive/2018/texmf-dist/fonts/type1/public/amsfonts/cm/cmr6.pfb></usr/lo
+cal/texlive/2018/texmf-dist/fonts/type1/public/amsfonts/cm/cmr8.pfb></usr/local
+/texlive/2018/texmf-dist/fonts/type1/public/amsfonts/cm/cmsy10.pfb></usr/local/
+texlive/2018/texmf-dist/fonts/type1/public/amsfonts/cm/cmti12.pfb>
+Output written on week1.pdf (14 pages, 1875274 bytes).
 PDF statistics:
- 65 PDF objects out of 1000 (max. 8388607)
- 34 compressed objects within 1 object stream
+ 111 PDF objects out of 1000 (max. 8388607)
+ 61 compressed objects within 1 object stream
  0 named destinations out of 1000 (max. 500000)
- 41 words of extra memory for PDF output out of 10000 (max. 10000000)
+ 61 words of extra memory for PDF output out of 10000 (max. 10000000)
 

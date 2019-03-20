@@ -13,7 +13,7 @@ object GradientDescentApp {
   val heightWeights = CsvReader.asCaseClassList("/nlys-train.csv", true, arrayToHeightWeight)
   val data = heightWeightTo2dPoint(heightWeights)
 
-  val learnedParameters: LearnedParameterSet = GradientDescent.gradientDescent(data, 0, 1, 0.1, 500)
+  val learnedParameters: LearnedParameterSet = GradientDescent.gradientDescent(data, 0, 1, 3, 500)
 
   def main(args: Array[String]): Unit = {
 
