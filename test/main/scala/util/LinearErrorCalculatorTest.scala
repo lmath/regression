@@ -14,9 +14,9 @@ class LinearErrorCalculatorTest extends Specification {
       )
 
       val data = expected.map(dataPoint => SimplePoint(dataPoint.height, dataPoint.weight))
-      val gmm: Double = LinearErrorCalculator.linearMeanSquaredError(data, 1, 1)
+      val linearMeanSquaredError: Double = LinearErrorCalculator.linearMeanSquaredError(data, 1, 1)
 
-      gmm shouldEqual(4212.5)
+      linearMeanSquaredError shouldEqual(4212.5)
     }
 
   }

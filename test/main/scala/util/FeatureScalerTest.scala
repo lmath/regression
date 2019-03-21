@@ -28,6 +28,7 @@ class FeatureScalerTest extends Specification {
     }
   }
 
+ Still deciding if to include this later. igtnor
   "minMaxScaledData" should {
     "scale the data" in {
       val inputData = List(
