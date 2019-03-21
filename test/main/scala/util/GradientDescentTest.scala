@@ -1,83 +1,41 @@
 package main.scala.util
 
-import main.scala.model.{HeightWeight, House, SimplePoint}
+import main.scala.model.SimplePoint
 import org.specs2.mutable.Specification
-import main.scala.util.GradientDescent.LearnedParameterSet
 
 class GradientDescentTest extends Specification{
 
-  "theta0Iter" should {
-    "probably not be zero" in {
-
-      val expected = List(
-        HeightWeight("Male",174.0,96.0),
-        HeightWeight("Male",189.0,87.0)
+  "updatedTheta0" should {
+    "be updated from the value passed in" in {
+      val normalisedData = List(
+        SimplePoint(0.22352941176470573, 0.3949999999999999),
+        SimplePoint(-0.4529411764705884, -0.6050000000000001),
+        SimplePoint(-0.48235294117647076, -0.45500000000000007),
+        SimplePoint(0.19411764705882337, 0.2699999999999999),
+        SimplePoint(0.5176470588235292, 0.3949999999999999)
       )
 
-      val data = expected.map(dataPoint => SimplePoint(dataPoint.height, dataPoint.weight))
-      val gmm: Double = GradientDescent.theta0Updated(data, 1, 1, 1)
+      val updatedTheta0: Double = GradientDescent.theta0Updated(normalisedData, 1, 1, 0.01)
 
-      gmm shouldEqual (-90)
+      updatedTheta0 shouldEqual (0.99)
     }
   }
 
-  "theta1iter" should {
-    "probably not be zero" in {
+  "updatedTheta1" should {
+    "be updated from the value passed in" in {
 
-      val expected = List(
-      HeightWeight("Female",185.0,110.0),
-      HeightWeight("Female",195.0,104.0)
+      val normalisedData = List(
+        SimplePoint(0.22352941176470573, 0.3949999999999999),
+        SimplePoint(-0.4529411764705884, -0.6050000000000001),
+        SimplePoint(-0.48235294117647076, -0.45500000000000007),
+        SimplePoint(0.19411764705882337, 0.2699999999999999),
+        SimplePoint(0.5176470588235292, 0.3949999999999999)
       )
 
-      val data = expected.map(dataPoint => SimplePoint(dataPoint.height, dataPoint.weight))
-      val gmm: Double = GradientDescent.theta1Updated(data, 1, 1, 1)
+      val updatedTheta1: Double = GradientDescent.theta1Updated(normalisedData, 1, 1, 0.01)
 
-      gmm shouldEqual (-15999)
+      updatedTheta1 shouldEqual (1.0000905017301038)
     }
   }
 
-  "gradientDescent" should {
-//    "get closer to the right answer" in {
-//
-//      def transformer(strings: Array[String]) = House(strings(0), strings(4).toDouble, strings(80).toDouble)
-//      val housePrices = CsvReader.asCaseClassList("house-prices-training-resources.data-test.csv", true, transformer)
-//
-//      val resources.data = housePrices.map(dataPoint => SimplePoint(dataPoint.lotArea, dataPoint.salePrice))
-//      val gmm = GradientDescent.gradientDescent(resources.data, 0, 1, 2, 1000)
-//
-//      gmm shouldEqual (LearnedParameterSet(5, 5))
-//    }
-
-    "get closer to the right answer" in {
-
-      def transformer(strings: Array[String]) = HeightWeight(strings(0), strings(1).toDouble, strings(2).toDouble)
-      val heightWeights = CsvReader.asCaseClassListFromTestResource("height-weight-test.csv", true, transformer)
-
-      val data = heightWeights.map(dataPoint => SimplePoint(dataPoint.height, dataPoint.weight))
-      val learnedParams = GradientDescent.gradientDescent(data, 0, 1, 0.001, 1000)
-
-      learnedParams.theta0 shouldEqual (-0.009308274850941753)
-      learnedParams.theta1 shouldEqual (0.9889333098394358)
-
-    }
-
-//    "pass the coursera test case" in {
-//
-//      //[1 5; 1 2; 1 4; 1 5],[1 6 4 2]',[0 0]',0.01,1000
-//
-//      def transformer(strings: Array[String]) = House(strings(0), strings(4).toDouble, strings(80).toDouble)
-//      val housePrices: Seq[House] = CsvReader.asCaseClassList("house-prices-training-resources.data-test.csv", true, transformer)
-//
-//      val resources.data = List(
-//        SimplePoint(1, 5),
-//        SimplePoint(1, 2),
-//        SimplePoint(1, 4),
-//        SimplePoint(1, 5),
-//      )
-////      val resources.data: Seq[SimplePoint] = housePrices.map(dataPoint => SimplePoint(dataPoint.lotArea, dataPoint.salePrice))
-//      val gmm = GradientDescent.gradientDescent(resources.data, 0, 1, 2, 1000)
-//
-//      gmm shouldEqual (LearnedParameterSet(5, 5))
-//    }
-  }
 }

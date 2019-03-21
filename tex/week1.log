@@ -1,4 +1,4 @@
-This is pdfTeX, Version 3.14159265-2.6-1.40.19 (TeX Live 2018) (preloaded format=pdflatex 2019.3.20)  20 MAR 2019 18:56
+This is pdfTeX, Version 3.14159265-2.6-1.40.19 (TeX Live 2018) (preloaded format=pdflatex 2019.3.20)  21 MAR 2019 11:53
 entering extended mode
  restricted \write18 enabled.
  file:line:error style messages enabled.
@@ -160,27 +160,27 @@ s/spam.png> <./images/photo-search.png>]
 <./images/algo-abstract.png, id=13, 1098.1025pt x 339.2675pt>
 File: ./images/algo-abstract.png Graphic file (type png)
 <use ./images/algo-abstract.png>
-Package pdftex.def Info: ./images/algo-abstract.png  used on input line 41.
+Package pdftex.def Info: ./images/algo-abstract.png  used on input line 38.
 (pdftex.def)             Requested size: 390.0pt x 120.48997pt.
 
-Overfull \hbox (17.62482pt too wide) in paragraph at lines 41--42
+Overfull \hbox (17.62482pt too wide) in paragraph at lines 38--39
 [][] 
  []
 
 [2 <./images/algo-abstract.png>]
 LaTeX Font Info:    External font `cmex10' loaded for size
-(Font)              <12> on input line 58.
+(Font)              <12> on input line 51.
 LaTeX Font Info:    External font `cmex10' loaded for size
-(Font)              <8> on input line 58.
+(Font)              <8> on input line 51.
 LaTeX Font Info:    External font `cmex10' loaded for size
-(Font)              <6> on input line 58.
+(Font)              <6> on input line 51.
 <./images/housing-prices.png, id=18, 863.225pt x 447.6725pt>
 File: ./images/housing-prices.png Graphic file (type png)
 <use ./images/housing-prices.png>
-Package pdftex.def Info: ./images/housing-prices.png  used on input line 70.
+Package pdftex.def Info: ./images/housing-prices.png  used on input line 63.
 (pdftex.def)             Requested size: 390.0pt x 202.24997pt.
 
-Overfull \hbox (17.62482pt too wide) in paragraph at lines 70--71
+Overfull \hbox (17.62482pt too wide) in paragraph at lines 63--64
 [][] 
  []
 
@@ -188,15 +188,15 @@ Overfull \hbox (17.62482pt too wide) in paragraph at lines 70--71
 <./images/tumour-size.png, id=26, 696.6025pt x 377.41pt>
 File: ./images/tumour-size.png Graphic file (type png)
 <use ./images/tumour-size.png>
-Package pdftex.def Info: ./images/tumour-size.png  used on input line 84.
+Package pdftex.def Info: ./images/tumour-size.png  used on input line 77.
 (pdftex.def)             Requested size: 390.0pt x 211.29633pt.
 
-Overfull \hbox (17.62482pt too wide) in paragraph at lines 84--85
+Overfull \hbox (17.62482pt too wide) in paragraph at lines 77--78
 [][] 
  []
 
 
-Overfull \hbox (2.34177pt too wide) in paragraph at lines 92--93
+Overfull \hbox (2.34177pt too wide) in paragraph at lines 85--86
 \OT1/cmr/m/n/12 There is an-other area of Ma-chine Learn-ing, un-su-per-vised l
 earn-ing that doesn't
  []
@@ -204,10 +204,10 @@ earn-ing that doesn't
 <./images/google-news.png, id=27, 1318.9275pt x 937.5025pt>
 File: ./images/google-news.png Graphic file (type png)
 <use ./images/google-news.png>
-Package pdftex.def Info: ./images/google-news.png  used on input line 96.
+Package pdftex.def Info: ./images/google-news.png  used on input line 89.
 (pdftex.def)             Requested size: 390.0pt x 277.20457pt.
 
-Overfull \hbox (17.62482pt too wide) in paragraph at lines 96--97
+Overfull \hbox (17.62482pt too wide) in paragraph at lines 89--90
 [][] 
  []
 
@@ -215,25 +215,25 @@ Overfull \hbox (17.62482pt too wide) in paragraph at lines 96--97
 <./images/cocktail-party.png, id=32, 800.9925pt x 453.695pt>
 File: ./images/cocktail-party.png Graphic file (type png)
 <use ./images/cocktail-party.png>
-Package pdftex.def Info: ./images/cocktail-party.png  used on input line 102.
+Package pdftex.def Info: ./images/cocktail-party.png  used on input line 95.
 (pdftex.def)             Requested size: 390.0pt x 220.90717pt.
 
-Overfull \hbox (17.62482pt too wide) in paragraph at lines 102--103
+Overfull \hbox (17.62482pt too wide) in paragraph at lines 95--96
 [][] 
  []
 
 [5 <./images/google-news.png>]
-Overfull \hbox (13.93936pt too wide) in paragraph at lines 116--126
+Overfull \hbox (13.93936pt too wide) in paragraph at lines 109--119
  [] 
  []
 
 <./images/height-weight.png, id=37, 793.96625pt x 567.11874pt>
 File: ./images/height-weight.png Graphic file (type png)
 <use ./images/height-weight.png>
-Package pdftex.def Info: ./images/height-weight.png  used on input line 133.
+Package pdftex.def Info: ./images/height-weight.png  used on input line 126.
 (pdftex.def)             Requested size: 390.0pt x 278.57423pt.
 
-Overfull \hbox (17.62482pt too wide) in paragraph at lines 133--134
+Overfull \hbox (17.62482pt too wide) in paragraph at lines 126--127
 [][] 
  []
 
@@ -241,10 +241,10 @@ Overfull \hbox (17.62482pt too wide) in paragraph at lines 133--134
 <./images/the-model.png, id=47, 954.56625pt x 412.54124pt>
 File: ./images/the-model.png Graphic file (type png)
 <use ./images/the-model.png>
-Package pdftex.def Info: ./images/the-model.png  used on input line 190.
+Package pdftex.def Info: ./images/the-model.png  used on input line 183.
 (pdftex.def)             Requested size: 390.0pt x 168.54498pt.
 
-Overfull \hbox (17.62482pt too wide) in paragraph at lines 190--191
+Overfull \hbox (17.62482pt too wide) in paragraph at lines 183--184
 [][] 
  []
 
@@ -252,31 +252,31 @@ Overfull \hbox (17.62482pt too wide) in paragraph at lines 190--191
 <./images/regression-model.png, id=52, 510.90875pt x 583.17876pt>
 File: ./images/regression-model.png Graphic file (type png)
 <use ./images/regression-model.png>
-Package pdftex.def Info: ./images/regression-model.png  used on input line 192.
+Package pdftex.def Info: ./images/regression-model.png  used on input line 185.
 
 (pdftex.def)             Requested size: 390.0pt x 445.16035pt.
 
-Overfull \hbox (17.62482pt too wide) in paragraph at lines 192--193
+Overfull \hbox (17.62482pt too wide) in paragraph at lines 185--186
 [][] 
  []
 
 [9 <./images/the-model.png>] [10 <./images/regression-model.png>]
-LaTeX Font Info:    Try loading font information for OMS+cmr on input line 222.
+LaTeX Font Info:    Try loading font information for OMS+cmr on input line 215.
 
 
 (/usr/local/texlive/2018/texmf-dist/tex/latex/base/omscmr.fd
 File: omscmr.fd 2014/09/29 v2.5h Standard LaTeX font definitions
 )
 LaTeX Font Info:    Font shape `OMS/cmr/m/n' in size <12> not available
-(Font)              Font shape `OMS/cmsy/m/n' tried instead on input line 222.
+(Font)              Font shape `OMS/cmsy/m/n' tried instead on input line 215.
  [11]
 <./images/cost-iterations.png, id=66, 765.86125pt x 583.17876pt>
 File: ./images/cost-iterations.png Graphic file (type png)
 <use ./images/cost-iterations.png>
-Package pdftex.def Info: ./images/cost-iterations.png  used on input line 256.
+Package pdftex.def Info: ./images/cost-iterations.png  used on input line 252.
 (pdftex.def)             Requested size: 390.0pt x 296.9723pt.
 
-Overfull \hbox (17.62482pt too wide) in paragraph at lines 256--257
+Overfull \hbox (17.62482pt too wide) in paragraph at lines 252--253
 [][] 
  []
 
@@ -284,37 +284,34 @@ Overfull \hbox (17.62482pt too wide) in paragraph at lines 256--257
 <./images/not-working.png, id=71, 467.7475pt x 241.90375pt>
 File: ./images/not-working.png Graphic file (type png)
 <use ./images/not-working.png>
-Package pdftex.def Info: ./images/not-working.png  used on input line 262.
+Package pdftex.def Info: ./images/not-working.png  used on input line 258.
 (pdftex.def)             Requested size: 390.0pt x 201.70653pt.
 
-Overfull \hbox (17.62482pt too wide) in paragraph at lines 262--263
+Overfull \hbox (17.62482pt too wide) in paragraph at lines 258--259
 [][] 
  []
 
 [13 <./images/cost-iterations.png>] [14 <./images/not-working.png>]
-(./week1.aux)
-
-LaTeX Warning: Label(s) may have changed. Rerun to get cross-references right.
-
- ) 
+(./week1.aux) ) 
 Here is how much of TeX's memory you used:
  1518 strings out of 492649
  22810 string characters out of 6129622
- 85281 words of memory out of 5000000
+ 85305 words of memory out of 5000000
  5394 multiletter control sequences out of 15000+600000
  8241 words of font info for 29 fonts, out of 8000000 for 9000
  1141 hyphenation exceptions out of 8191
  41i,9n,25p,494b,241s stack positions out of 5000i,500n,10000p,200000b,80000s
-</usr/local/texlive/2018/texmf-dist/fonts/type1/public/amsfonts/cm/cmbx12.pfb
-></usr/local/texlive/2018/texmf-dist/fonts/type1/public/amsfonts/cm/cmex10.pfb>
-</usr/local/texlive/2018/texmf-dist/fonts/type1/public/amsfonts/cm/cmmi12.pfb><
-/usr/local/texlive/2018/texmf-dist/fonts/type1/public/amsfonts/cm/cmmi8.pfb></u
-sr/local/texlive/2018/texmf-dist/fonts/type1/public/amsfonts/cm/cmr12.pfb></usr
-/local/texlive/2018/texmf-dist/fonts/type1/public/amsfonts/cm/cmr6.pfb></usr/lo
-cal/texlive/2018/texmf-dist/fonts/type1/public/amsfonts/cm/cmr8.pfb></usr/local
-/texlive/2018/texmf-dist/fonts/type1/public/amsfonts/cm/cmsy10.pfb></usr/local/
-texlive/2018/texmf-dist/fonts/type1/public/amsfonts/cm/cmti12.pfb>
-Output written on week1.pdf (14 pages, 1875274 bytes).
+</usr/local/texlive/2018/texmf-dist/fonts/type1/public/amsfonts/
+cm/cmbx12.pfb></usr/local/texlive/2018/texmf-dist/fonts/type1/public/amsfonts/c
+m/cmex10.pfb></usr/local/texlive/2018/texmf-dist/fonts/type1/public/amsfonts/cm
+/cmmi12.pfb></usr/local/texlive/2018/texmf-dist/fonts/type1/public/amsfonts/cm/
+cmmi8.pfb></usr/local/texlive/2018/texmf-dist/fonts/type1/public/amsfonts/cm/cm
+r12.pfb></usr/local/texlive/2018/texmf-dist/fonts/type1/public/amsfonts/cm/cmr6
+.pfb></usr/local/texlive/2018/texmf-dist/fonts/type1/public/amsfonts/cm/cmr8.pf
+b></usr/local/texlive/2018/texmf-dist/fonts/type1/public/amsfonts/cm/cmsy10.pfb
+></usr/local/texlive/2018/texmf-dist/fonts/type1/public/amsfonts/cm/cmti12.pfb>
+
+Output written on week1.pdf (14 pages, 1874991 bytes).
 PDF statistics:
  111 PDF objects out of 1000 (max. 8388607)
  61 compressed objects within 1 object stream
