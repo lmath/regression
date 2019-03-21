@@ -38,7 +38,7 @@ object GradientDescent {
 
     var theta0 = startingTheta0
     var theta1 = startingTheta1
-    var cost = LinearErrorCalculator.linearMSE(data, theta0, theta1)
+    var cost = LinearErrorCalculator.linearMeanSquaredError(data, theta0, theta1)
     var gradientDescentHistory = new ListBuffer[GradientDescentHistoryPoint]
     println(s"starting cost ${cost}")
 
@@ -57,7 +57,7 @@ object GradientDescent {
       theta0 = tempTheta0
       theta1 = tempTheta1
 
-      cost = LinearErrorCalculator.linearMSE(data, theta0, theta1)
+      cost = LinearErrorCalculator.linearMeanSquaredError(data, theta0, theta1)
       println(s"new theta 0 ${theta0}")
       println(s"new theta 1 ${theta1}")
       println(s"new cost ${cost}")

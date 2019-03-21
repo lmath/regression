@@ -5,7 +5,7 @@ import org.specs2.mutable.Specification
 
 class LinearErrorCalculatorTest extends Specification {
 
-  "linearMSE" should {
+  "linearMeanSquaredError" should {
     "sum up the squares of errors" in {
 
       val expected = List(
@@ -14,7 +14,7 @@ class LinearErrorCalculatorTest extends Specification {
       )
 
       val data = expected.map(dataPoint => SimplePoint(dataPoint.height, dataPoint.weight))
-      val gmm: Double = LinearErrorCalculator.linearMSE(data, 1, 1)
+      val gmm: Double = LinearErrorCalculator.linearMeanSquaredError(data, 1, 1)
 
       gmm shouldEqual(4212.5)
     }

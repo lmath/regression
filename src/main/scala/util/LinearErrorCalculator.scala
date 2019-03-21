@@ -4,7 +4,7 @@ import main.scala.model.SimplePoint
 
 object LinearErrorCalculator {
 
-  def linearMSE(data: List[SimplePoint], theta0: Double, theta1: Double): Double = {
+  def linearMeanSquaredError(data: List[SimplePoint], theta0: Double, theta1: Double): Double = {
     def h(x: Double) = theta1 * x + theta0
     def errorForAPoint(point: SimplePoint) = (h(point.x) - point.y) * (h(point.x) - point.y)
 
