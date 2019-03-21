@@ -5,7 +5,7 @@ import org.specs2.mutable.Specification
 
 class FeatureScalerTest extends Specification {
 
-  "scaledFeatures" should {
+  "meanNormalisedData" should {
     "scale the data in " in {
       val inputData = List(
         SimplePoint(78, 90),
