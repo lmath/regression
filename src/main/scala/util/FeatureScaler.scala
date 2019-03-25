@@ -21,21 +21,39 @@ object FeatureScaler {
     }
   }
 
-  def scaledFeatures(data: List[SimplePoint]): List[SimplePoint] = {
+  def minMaxScaledData(data: List[SimplePoint]): List[SimplePoint] = {
+    val xList = data.map(_.x)
+    val yList = data.map(_.y)
 
-    def sum(xs: List[Double]): Double = {
-      @tailrec
-      def inner(xs: List[Double], accum: Double): Double = {
-        xs match {
-          case x :: tail => inner(tail, accum + x)
-          case Nil => accum
-        }
-      }
+    val maxX = xList.max
+    val maxY = yList.max
+    val minX = yList.min
+    val minY = yList.min
 
-      inner(xs, 0)
+    data.map { point =>
+      SimplePoint(
+        (point.x - minX) / (maxX - minX),
+        (point.y - minY) / (maxY - minY)
+      )
     }
 
-    def avg(nums: List[Double]): Double = sum(nums) / nums.length.toDouble
+  }
+
+  def sum(xs: List[Double]): Double = {
+    @tailrec
+    def inner(xs: List[Double], accum: Double): Double = {
+      xs match {
+        case x :: tail => inner(tail, accum + x)
+        case Nil => accum
+      }
+    }
+
+    inner(xs, 0)
+  }
+
+  def avg(nums: List[Double]): Double = sum(nums) / nums.length.toDouble
+
+  def meanNormalisedData(data: List[SimplePoint]): List[SimplePoint] = {
 
     def scaled(min: Double, max: Double, avg: Double, dataPoint: Double): Double = {
       val range = max - min
@@ -52,9 +70,7 @@ object FeatureScaler {
     val maxY = yList.max
 
     val xAvg = avg(xList)
-    println(xAvg)
     val yAvg = avg(yList)
-    println(yAvg)
 
     data.map { point =>
       SimplePoint(

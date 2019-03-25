@@ -1,4 +1,4 @@
-This is pdfTeX, Version 3.14159265-2.6-1.40.19 (TeX Live 2018) (preloaded format=pdflatex 2019.3.12)  25 MAR 2019 22:09
+This is pdfTeX, Version 3.14159265-2.6-1.40.19 (TeX Live 2018) (preloaded format=pdflatex 2019.3.12)  25 MAR 2019 22:28
 entering extended mode
  restricted \write18 enabled.
  file:line:error style messages enabled.
@@ -237,150 +237,176 @@ LaTeX Info: Redefining \nameref on input line 5.
 <./images/spam.png, id=56, 1487.5575pt x 732.7375pt>
 File: ./images/spam.png Graphic file (type png)
 <use ./images/spam.png>
-Package pdftex.def Info: ./images/spam.png  used on input line 24.
+Package pdftex.def Info: ./images/spam.png  used on input line 19.
 (pdftex.def)             Requested size: 390.0pt x 192.1061pt.
 
-Overfull \hbox (17.62482pt too wide) in paragraph at lines 24--25
+Overfull \hbox (17.62482pt too wide) in paragraph at lines 19--20
 [][] 
  []
 
 <./images/photo-search.png, id=58, 1381.16pt x 610.28pt>
 File: ./images/photo-search.png Graphic file (type png)
 <use ./images/photo-search.png>
-Package pdftex.def Info: ./images/photo-search.png  used on input line 28.
+Package pdftex.def Info: ./images/photo-search.png  used on input line 23.
 (pdftex.def)             Requested size: 390.0pt x 172.3206pt.
 
-Overfull \hbox (17.62482pt too wide) in paragraph at lines 28--29
+Overfull \hbox (17.62482pt too wide) in paragraph at lines 23--24
 [][] 
  []
 
 [1
 
 {/usr/local/texlive/2018/texmf-var/fonts/map/pdftex/updmap/pdftex.map} <./image
-s/spam.png>]
-<./images/algo-abstract.png, id=67, 1098.1025pt x 339.2675pt>
+s/spam.png> <./images/photo-search.png>]
+<./images/algo-abstract.png, id=68, 1098.1025pt x 339.2675pt>
 File: ./images/algo-abstract.png Graphic file (type png)
 <use ./images/algo-abstract.png>
-Package pdftex.def Info: ./images/algo-abstract.png  used on input line 44.
+Package pdftex.def Info: ./images/algo-abstract.png  used on input line 39.
 (pdftex.def)             Requested size: 390.0pt x 120.48997pt.
 
-Overfull \hbox (17.62482pt too wide) in paragraph at lines 44--45
+Overfull \hbox (17.62482pt too wide) in paragraph at lines 39--40
 [][] 
  []
 
-[2 <./images/photo-search.png>]
+[2 <./images/algo-abstract.png>]
 LaTeX Font Info:    External font `cmex10' loaded for size
-(Font)              <12> on input line 61.
+(Font)              <12> on input line 56.
 LaTeX Font Info:    External font `cmex10' loaded for size
-(Font)              <8> on input line 61.
+(Font)              <8> on input line 56.
 LaTeX Font Info:    External font `cmex10' loaded for size
-(Font)              <6> on input line 61.
- [3 <./images/algo-abstract.png>]
-<./images/housing-prices.png, id=80, 863.225pt x 447.6725pt>
+(Font)              <6> on input line 56.
+<./images/housing-prices.png, id=74, 863.225pt x 447.6725pt>
 File: ./images/housing-prices.png Graphic file (type png)
 <use ./images/housing-prices.png>
-Package pdftex.def Info: ./images/housing-prices.png  used on input line 72.
+Package pdftex.def Info: ./images/housing-prices.png  used on input line 67.
 (pdftex.def)             Requested size: 390.0pt x 202.24997pt.
 
-Overfull \hbox (17.62482pt too wide) in paragraph at lines 72--73
+Overfull \hbox (17.62482pt too wide) in paragraph at lines 67--68
 [][] 
  []
 
-<./images/tumour-size.png, id=81, 696.6025pt x 377.41pt>
+[3 <./images/housing-prices.png>]
+<./images/tumour-size.png, id=83, 696.6025pt x 377.41pt>
 File: ./images/tumour-size.png Graphic file (type png)
 <use ./images/tumour-size.png>
-Package pdftex.def Info: ./images/tumour-size.png  used on input line 86.
+Package pdftex.def Info: ./images/tumour-size.png  used on input line 81.
 (pdftex.def)             Requested size: 390.0pt x 211.29633pt.
 
-Overfull \hbox (17.62482pt too wide) in paragraph at lines 86--87
+Overfull \hbox (17.62482pt too wide) in paragraph at lines 81--82
 [][] 
  []
 
-[4 <./images/housing-prices.png>]
-Overfull \hbox (2.34177pt too wide) in paragraph at lines 94--95
+
+Overfull \hbox (2.34177pt too wide) in paragraph at lines 89--90
 \OT1/cmr/m/n/12 There is an-other area of Ma-chine Learn-ing, un-su-per-vised l
 earn-ing that doesn't
  []
 
-<./images/google-news.png, id=88, 1318.9275pt x 937.5025pt>
+[4 <./images/tumour-size.png>]
+<./images/google-news.png, id=89, 1318.9275pt x 937.5025pt>
 File: ./images/google-news.png Graphic file (type png)
 <use ./images/google-news.png>
-Package pdftex.def Info: ./images/google-news.png  used on input line 98.
+Package pdftex.def Info: ./images/google-news.png  used on input line 93.
 (pdftex.def)             Requested size: 390.0pt x 277.20457pt.
 
-Overfull \hbox (17.62482pt too wide) in paragraph at lines 98--99
+Overfull \hbox (17.62482pt too wide) in paragraph at lines 93--94
 [][] 
  []
 
-[5 <./images/tumour-size.png>]
-<./images/cocktail-party.png, id=94, 800.9925pt x 453.695pt>
+<./images/cocktail-party.png, id=90, 800.9925pt x 453.695pt>
 File: ./images/cocktail-party.png Graphic file (type png)
 <use ./images/cocktail-party.png>
-Package pdftex.def Info: ./images/cocktail-party.png  used on input line 104.
+Package pdftex.def Info: ./images/cocktail-party.png  used on input line 99.
 (pdftex.def)             Requested size: 390.0pt x 220.90717pt.
 
-Overfull \hbox (17.62482pt too wide) in paragraph at lines 104--105
+Overfull \hbox (17.62482pt too wide) in paragraph at lines 99--100
 [][] 
  []
 
-[6 <./images/google-news.png>]
-<./images/ames-training-set.png, id=101, 1569.865pt x 1146.2825pt>
+[5 <./images/google-news.png>]
+<./images/ames-training-set.png, id=97, 1569.865pt x 1146.2825pt>
 File: ./images/ames-training-set.png Graphic file (type png)
 <use ./images/ames-training-set.png>
-Package pdftex.def Info: ./images/ames-training-set.png  used on input line 137
+Package pdftex.def Info: ./images/ames-training-set.png  used on input line 132
 .
 (pdftex.def)             Requested size: 390.0pt x 284.76836pt.
 
-Overfull \hbox (17.62482pt too wide) in paragraph at lines 137--138
+Overfull \hbox (17.62482pt too wide) in paragraph at lines 132--133
 [][] 
  []
 
-[7 <./images/cocktail-party.png>] [8 <./images/ames-training-set.png>] [9]
-[10]
-LaTeX Font Info:    Try loading font information for OMS+cmr on input line 242.
+[6 <./images/cocktail-party.png>] [7 <./images/ames-training-set.png>]
+<./images/the-model.png, id=110, 954.56625pt x 412.54124pt>
+File: ./images/the-model.png Graphic file (type png)
+<use ./images/the-model.png>
+Package pdftex.def Info: ./images/the-model.png  used on input line 187.
+(pdftex.def)             Requested size: 390.0pt x 168.54498pt.
 
- (/usr/local/texlive/2018/texmf-dist/tex/latex/base/omscmr.fd
+Overfull \hbox (17.62482pt too wide) in paragraph at lines 187--188
+[][] 
+ []
+
+[8] [9 <./images/the-model.png>]
+LaTeX Font Info:    Try loading font information for OMS+cmr on input line 219.
+
+
+(/usr/local/texlive/2018/texmf-dist/tex/latex/base/omscmr.fd
 File: omscmr.fd 2014/09/29 v2.5h Standard LaTeX font definitions
 )
 LaTeX Font Info:    Font shape `OMS/cmr/m/n' in size <12> not available
-(Font)              Font shape `OMS/cmsy/m/n' tried instead on input line 242.
+(Font)              Font shape `OMS/cmsy/m/n' tried instead on input line 219.
+ [10]
+Package atveryend Info: Empty hook `BeforeClearDocument' on input line 278.
  [11]
-Package atveryend Info: Empty hook `BeforeClearDocument' on input line 301.
-
-[12] [13]
-Package atveryend Info: Empty hook `AfterLastShipout' on input line 301.
+[12]
+Package atveryend Info: Empty hook `AfterLastShipout' on input line 278.
  (./week1.aux)
-Package atveryend Info: Executing hook `AtVeryEndDocument' on input line 301.
-Package atveryend Info: Executing hook `AtEndAfterFileList' on input line 301.
-Package rerunfilecheck Info: File `week1.out' has not changed.
-(rerunfilecheck)             Checksum: EF9C3A44D4726BD45D589704CDE52CBE;941.
+Package atveryend Info: Executing hook `AtVeryEndDocument' on input line 278.
+Package atveryend Info: Executing hook `AtEndAfterFileList' on input line 278.
 
+
+Package rerunfilecheck Warning: File `week1.out' has changed.
+(rerunfilecheck)                Rerun to get outlines right
+(rerunfilecheck)                or use package `bookmark'.
+
+Package rerunfilecheck Info: Checksums for `week1.out':
+(rerunfilecheck)             Before: EF9C3A44D4726BD45D589704CDE52CBE;941
+(rerunfilecheck)             After:  75C6DA079B64E044BFE5FA3367998227;872.
 
 LaTeX Warning: There were multiply-defined labels.
 
-Package atveryend Info: Empty hook `AtVeryVeryEnd' on input line 301.
+Package atveryend Info: Empty hook `AtVeryVeryEnd' on input line 278.
  ) 
 Here is how much of TeX's memory you used:
- 5088 strings out of 492649
- 76292 string characters out of 6129622
- 167246 words of memory out of 5000000
- 8917 multiletter control sequences out of 15000+600000
+ 5093 strings out of 492649
+ 76436 string characters out of 6129622
+ 165246 words of memory out of 5000000
+ 8921 multiletter control sequences out of 15000+600000
  8241 words of font info for 29 fonts, out of 8000000 for 9000
  1141 hyphenation exceptions out of 8191
  28i,9n,28p,494b,382s stack positions out of 5000i,500n,10000p,200000b,80000s
-</usr/local/texlive/2018/texmf-dist/fonts/type1/public/amsfonts/cm/cmbx12.pfb
-></usr/local/texlive/2018/texmf-dist/fonts/type1/public/amsfonts/cm/cmex10.pfb>
-</usr/local/texlive/2018/texmf-dist/fonts/type1/public/amsfonts/cm/cmmi12.pfb><
-/usr/local/texlive/2018/texmf-dist/fonts/type1/public/amsfonts/cm/cmmi8.pfb></u
-sr/local/texlive/2018/texmf-dist/fonts/type1/public/amsfonts/cm/cmr12.pfb></usr
-/local/texlive/2018/texmf-dist/fonts/type1/public/amsfonts/cm/cmr6.pfb></usr/lo
-cal/texlive/2018/texmf-dist/fonts/type1/public/amsfonts/cm/cmr8.pfb></usr/local
-/texlive/2018/texmf-dist/fonts/type1/public/amsfonts/cm/cmsy10.pfb></usr/local/
-texlive/2018/texmf-dist/fonts/type1/public/amsfonts/cm/cmti12.pfb>
-Output written on week1.pdf (13 pages, 1430784 bytes).
+pdfTeX warning (dest): name{subsubsection.2.8.2} has been referenced but does
+ not exist, replaced by a fixed one
+
+pdfTeX warning (dest): name{subsubsection.2.8.1} has been referenced but does n
+ot exist, replaced by a fixed one
+
+pdfTeX warning (dest): name{subsection.2.8} has been referenced but does not ex
+ist, replaced by a fixed one
+
+</usr/local/texlive/2018/texmf-dist/fonts/type1/public/amsfonts/cm/cmbx12.pfb><
+/usr/local/texlive/2018/texmf-dist/fonts/type1/public/amsfonts/cm/cmex10.pfb></
+usr/local/texlive/2018/texmf-dist/fonts/type1/public/amsfonts/cm/cmmi12.pfb></u
+sr/local/texlive/2018/texmf-dist/fonts/type1/public/amsfonts/cm/cmmi8.pfb></usr
+/local/texlive/2018/texmf-dist/fonts/type1/public/amsfonts/cm/cmr12.pfb></usr/l
+ocal/texlive/2018/texmf-dist/fonts/type1/public/amsfonts/cm/cmr6.pfb></usr/loca
+l/texlive/2018/texmf-dist/fonts/type1/public/amsfonts/cm/cmr8.pfb></usr/local/t
+exlive/2018/texmf-dist/fonts/type1/public/amsfonts/cm/cmsy10.pfb></usr/local/te
+xlive/2018/texmf-dist/fonts/type1/public/amsfonts/cm/cmti12.pfb>
+Output written on week1.pdf (12 pages, 1445444 bytes).
 PDF statistics:
- 184 PDF objects out of 1000 (max. 8388607)
- 142 compressed objects within 2 object streams
+ 182 PDF objects out of 1000 (max. 8388607)
+ 139 compressed objects within 2 object streams
  33 named destinations out of 1000 (max. 500000)
- 145 words of extra memory for PDF output out of 10000 (max. 10000000)
+ 150 words of extra memory for PDF output out of 10000 (max. 10000000)
 
